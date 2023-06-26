@@ -1,0 +1,18 @@
+<button (Click)="getData()">get</button>
+
+<div *ngIf="data">
+  <table>
+    <th>id</th>
+    <th>name</th>
+    <th>price</th>
+
+
+    <tr *ngFor="let product of data">
+      
+      <td>{{product.id}}</td>
+      <td>{{product.titile}}</td>
+      <td>{{product.price}}</td>
+
+    </tr>
+  </table> 
+</div>
